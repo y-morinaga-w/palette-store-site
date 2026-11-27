@@ -1,5 +1,9 @@
 "use strict";
 
+if (location.pathname === "/join.html") {
+  location.replace("/join/" + location.search + location.hash);
+}
+
 const storeUrls = {
   "app-store": "",
   "google-play": "",
