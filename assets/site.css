@@ -1,0 +1,162 @@
+:root {
+  --paper: #fbf6ee;
+  --ink: #2b2620;
+  --muted: #6b6256;
+  --pink: #c2557d;
+  --action: #a33c63;
+  --border: #ece1cf;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  text-align: center;
+  padding: 24px;
+}
+
+.home h1 { font-size: 1.6rem; margin: 0 0 8px; }
+.home p { color: var(--muted); margin: 0 0 20px; }
+.home a { background: var(--pink); }
+
+.home a,
+.join .action {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.privacy,
+.join {
+  color-scheme: light;
+  padding: 24px 18px 64px;
+  font-family: -apple-system, "Helvetica Neue", "Noto Sans", sans-serif;
+  line-height: 1.7;
+}
+
+.privacy *,
+.join * { box-sizing: border-box; }
+
+:lang(ja) > :is(.privacy, .join) {
+  font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  line-height: 1.85;
+}
+
+:lang(zh-Hans) > :is(.privacy, .join) {
+  font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+  line-height: 1.8;
+}
+
+:lang(zh-Hant) > :is(.privacy, .join) {
+  font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+  line-height: 1.8;
+}
+
+:lang(ko) > :is(.privacy, .join) {
+  font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  line-height: 1.8;
+}
+
+main { max-width: 720px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 28px; }
+h1 { font-size: 1.5rem; margin: 0 0 6px; }
+.lead { color: var(--muted); margin: 0; }
+h2 {
+  font-size: 1.1rem;
+  margin: 32px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e9ddca;
+}
+
+.privacy p,
+.privacy li,
+.join p { font-size: 0.95rem; }
+
+.privacy .lead,
+.join .lead { font-size: 0.9rem; }
+
+.privacy ul { padding-left: 1.2em; }
+a { color: var(--pink); }
+.privacy .meta { margin-top: 40px; font-size: 0.85rem; color: var(--muted); }
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 4px 18px 14px;
+  margin-top: 12px;
+}
+
+.langnav {
+  text-align: right;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+.langnav a,
+.langnav strong { margin-left: 10px; }
+.langnav strong { color: var(--ink); }
+
+.join [hidden] { display: none; }
+.join .langnav a { color: var(--action); }
+.join .langnav [aria-current] {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.join .invite-card {
+  padding: 20px 18px;
+  text-align: center;
+}
+
+.invite-card label { font-weight: 600; }
+
+.room-code {
+  display: block;
+  width: 11ch;
+  margin: 6px auto 12px;
+  padding: 6px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  font: bold clamp(1.7rem, 8vw, 2.5rem)/1.35 "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.join .action {
+  border: 0;
+  background: var(--action);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.join .feedback { min-height: 1.7em; margin: 4px 0 0; }
+.join .feedback,
+.join .expiry { color: var(--muted); }
+.invite-card p:last-child { margin-bottom: 0; }
+.invite-card p:first-child { margin-top: 0; font-weight: 600; }
+
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
