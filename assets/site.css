@@ -1,0 +1,110 @@
+:root {
+  --paper: #fbf6ee;
+  --ink: #2b2620;
+  --muted: #6b6256;
+  --pink: #c2557d;
+  --action: #a33c63;
+  --border: #ece1cf;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  text-align: center;
+  padding: 24px;
+}
+
+.home h1 { font-size: 1.6rem; margin: 0 0 8px; }
+.home p { color: var(--muted); margin: 0 0 20px; }
+.home a { background: var(--pink); }
+
+.home a,
+.join .action {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.privacy,
+.join {
+  color-scheme: light;
+  padding: 24px 18px 64px;
+  font-family: -apple-system, "Helvetica Neue", "Noto Sans", sans-serif;
+  line-height: 1.7;
+}
+
+.privacy *,
+.join * { box-sizing: border-box; }
+
+:lang(ja) > :is(.privacy, .join) {
+  font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  line-height: 1.85;
+}
+
+:lang(zh-Hans) > :is(.privacy, .join) {
+  font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+  line-height: 1.8;
+}
+
+:lang(zh-Hant) > :is(.privacy, .join) {
+  font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+  line-height: 1.8;
+}
+
+:lang(ko) > :is(.privacy, .join) {
+  font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  line-height: 1.8;
+}
+
+main { max-width: 720px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 28px; }
+h1 { font-size: 1.5rem; margin: 0 0 6px; }
+.lead { color: var(--muted); font-size: 0.9rem; margin: 0; }
+h2 {
+  font-size: 1.1rem;
+  margin: 32px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e9ddca;
+}
+
+.privacy p,
+.privacy li,
+.join p { font-size: 0.95rem; }
+
+.privacy .lead,
+.join .lead { font-size: 0.9rem; }
+
+.privacy ul { padding-left: 1.2em; }
+a { color: var(--pink); }
+.privacy .meta { margin-top: 40px; font-size: 0.85rem; color: var(--muted); }
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 4px 18px 14px;
+  margin-top: 12px;
+}
+
+.langnav {
+  text-align: right;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+.langnav a,
+.langnav strong { margin-left: 10px; }
+.langnav strong { color: var(--ink); }
