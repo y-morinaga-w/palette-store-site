@@ -52,7 +52,7 @@ const messages = {
     instructions: "安裝應用程式後，再開啟一次此連結，或在應用程式的「好友對戰」中輸入通關碼。",
     expiry: "通關碼的有效期限為 10 分鐘。",
     "invalid-message": "這個邀請連結好像不正確",
-    "invalid-help": "請邀請你的好友再傳一次連結。",
+    "invalid-help": "請對方再傳一次邀請連結。",
   },
   ko: {
     app: "팔레트 가게",
