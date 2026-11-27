@@ -1,4 +1,5 @@
 url: https://palettestore.crois-studio.com
+baseurl: ""
 include:
   - .well-known
 plugins:
