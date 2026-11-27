@@ -1,2 +1,9 @@
+url: https://palettestore.crois-studio.com
 include:
   - .well-known
+plugins:
+  - jekyll-redirect-from
+redirect_from:
+  json: false
+readme_index:
+  enabled: false
